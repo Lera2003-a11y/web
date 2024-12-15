@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: rgb(129, 12, 12); /* Цвет текста */
+    font-family: Arial, Helvetica, sans-serif, sans-serif; /* Шрифт */
+    font-weight: 400;
+    font-size: 16px;
+    background-size: cover;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper{
+background:rgb(255, 255, 255) ;
+    width: 100%;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header
+{
+    background-color: #850512;  
+    padding: 50px 20px;
+    text-align: center; /* Выравнивание текста по центру */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.contact-info {
+    font-size: 14px; /* Размер шрифта для контактной информации */
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #cacaca;
+}
+
+/*Секция с преимуществами*/
+.advantages h3 {
+    font-weight: 600;
+    font-size: 31px;
+    text-align: center;
+}
+
+.advantages {
+    padding-top: 300px;
+    margin-top: 30px;
+}
+
+.advantages .advantage {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.advantages .advantage span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.advantages .advantage  .block {
+    margin: 20px;
+}
+
+.big-text {
+    padding:  50px 0;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    width: 800px;
+}
+
+.banner {
+    padding: 80px 0;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.container-banner {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет изображениям переноситься на новую строку */
+    justify-content: space-between; /* Распределяет пространство между изображениями */
+    margin-bottom: 40px;
+}
+
+.container-banner img {
+    width: calc(33.33% - 10px); /* Устанавливает ширину изображений с учетом отступов */
+    margin-bottom: 40px; /* Отступ снизу для изображений */
+}
+
+
+
+
+
+.hero--about .info {
+    width: 800px;
+    padding: 150px 0;
+    position: relative;
+    right: -300px;
+    display: flex; /* Используем flexbox для центрирования */
+    flex-direction: column; /* Вертикальное расположение элементов */
+    justify-content: center; /* Центрируем по вертикали */
+    align-items: center; /* Центрируем по горизонтали */
+}
+
+.hero--about .info h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.hero--about .info .btn{
+    margin-top: 30px;
+}
+
+.work {
+    padding: 80px 0;
+}
+
+.work h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.work h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.work .blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.work .blocks .block {
+    width: 25%;
+    border-radius: 10px;
+    padding: 50px 35px;
+    background: #9e0e1c;
+}
+
+.work .blocks .block h3 {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.work .blocks .block p {
+    
+    color: #fff;
+}
+
+.hero-contacts h1 {
+    text-align: center;
+    margin-top: 70px 30px;
+    font-size: 33px;
+
+}
+
+.hero-contacts .map {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.feedback {
+    padding: 70px;  
+}
+
+.feedback h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.feedback p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.feedback form {
+    margin: 80px auto;
+    width: 600px;
+}
+
+.feedback form .inline {
+    display: flexbox;
+    justify-content: space-between;
+}
+
+.feedback form .inline>div {
+    width: 50%;
+}
+
+.feedback form label {
+    color: #af9191;
+    font-size: 14px;
+}
+
+.feedback form input,
+.feedback form textarea {
+    border-radius: 10px;
+    border: 0.6px solid #b46972 ;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: #050505;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.feedback form .one-line {
+    width: 96%;
+}
+
+.feedback form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.feedback form button {
+    background: #9e0e1c;
+    border-radius: 5px;
+    border: 0;
+    float: right;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 15px 35px;
+    transition: all 500ms ease;
+}
+
+.feedback form button:hover {
+    background:#af4305;
+
+}
+
+.container-ots {
+    padding: 20px;
+}
+
+.container-ots .reviews-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 70px; /* Отступ снизу */
+}
+
+.container-ots .reviews-container .reviews-list {
+    width: 60%;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.container-ots .reviews-container .review-form {
+    width: 35%;
+}
+
+.container-ots .reviews-container .review-form input,
+.review-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container-ots .reviews-container .review-form button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container-ots .reviews-container .review-form button:hover {
+    background-color: #45a049;
+}
+
+.container-ots .reviews-container .review-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+footer {
+    background-color: #850512;  
+    padding: 10px 0;
+    position: fixed; /* Закрепляем подвал */
+    left: 0;
+    bottom: 0; /* Прикрепляем к низу страницы */
+    width: 100%; /* Ширина на всю страницу */
+    z-index: 1000; /* Устанавливаем уровень наложения */
+}
+
+footer hr {
+    margin: 10px 0;
+    border: 0;
+    height: 1px;
+    bottom: 0;
+}
+
+footer > p {
+    text-align: center;
+    color: #cacaca;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+ header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ header nav ul li {
+    display: inline-block;
+
+ }
+
+ header nav ul li a {
+    color: #ffffff;
+ }
+
+ header nav ul li:not(.btn) a:hover {
+    border-bottom: 5px solid #680712;
+ }
+
+ header nav ul li.btn a {
+   background: #3a0106 (354, 83%, 16%);
+   padding: 9px 17px;
+   border-radius: 5px;
+   transition: all 500ms ease;
+ }
+
+ header nav ul li.btn a:hover {
+    background: #680712;
+ }
+ .hero {
+    padding-bottom: 100px;
+    position: relative;
+ }
+ 
+
+ .hero--info {
+    width: 530px;
+    padding-top: 70px;
+ }
+
+ .hero--info h2 {
+    color: #9e0e1c;
+    font-size: 20px;
+    font-weight: 600;
+ }
+
+ .hero--info h {
+    font-size: 50px;
+    font-weight: 600;
+ }
+
+ .hero--info p {
+    font-weight: 500;
+    line-height: 170%;
+    margin: 30px;
+ }
+
+ .hero--info .btn, .hero--about .info .btn {
+    background: #9e0e1c;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 500ms ease;
+    font-size: 17px;
+ }
+
+ .hero--info .btn:hover, .hero--about .info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+ }
+
+ .hero img {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    width: 800px;
+ }
+
+ .job-list {
+    padding: 20px;
+}
+
+.job {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #d6c6bc;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #cacaca;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#applyButton {
+    background: #9e0e1c;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 500ms ease;
+    font-size: 17px;
+    margin-top: 20px;
+}
